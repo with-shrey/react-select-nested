@@ -6,7 +6,7 @@ Yet another Select control for [React](https://reactjs.com). It allows building 
 
 
 ```
-npm i react-select --save
+npm i react-select-nested --save
 ```
 
 Then use it in your app:
