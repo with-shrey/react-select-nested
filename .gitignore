@@ -1,0 +1,32 @@
+# Build
+lib
+dist
+docs/dist
+.env
+
+# Logs
+logs
+*.log
+
+# Runtime data
+pids
+*.pid
+*.seed
+
+# Coverage tools
+lib-cov
+coverage
+.nyc_output
+
+# Dependency directory
+node_modules
+
+# Publish directory
+.publish
+
+# Editor artifacts
+.idea
+
+# Other
+.DS_Store
+.env
