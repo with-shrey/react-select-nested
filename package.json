@@ -1,6 +1,6 @@
 {
   "name": "react-select-nested",
-  "version": "1.0.0",
+  "version": "1.0.2",
   "description": "Select control with nested submenus.",
   "main": "index.js",
   "module": "dist/main.js",
