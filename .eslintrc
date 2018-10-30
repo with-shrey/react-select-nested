@@ -1,0 +1,19 @@
+{
+  parser: "babel-eslint",
+  "plugins": [
+    "react"
+  ],
+  "rules": {
+    "react/no-find-dom-node": "off"
+  },
+  "settings": {
+    "react": {
+      "pragma": "React",
+      "version": "16.6.0"
+    }
+  },
+  "extends": [
+    "eslint:recommended",
+    "plugin:react/recommended"
+  ]
+}

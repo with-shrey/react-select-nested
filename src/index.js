@@ -1,3 +1,3 @@
-import Select from './SxSelect/SxSelect.js';
+import Select from './SxSelect/SxSelect';
 
 export default Select;
