@@ -2,7 +2,7 @@
 
 Yet another Select control for [React](https://reactjs.com). It allows building nested selects.
 
-![](react-select-nested.gif)
+![](https://github.com/sirbob/media-lib/blob/master/react-select-nested.gif)
 
 
 ```

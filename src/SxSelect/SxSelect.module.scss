@@ -1,10 +1,11 @@
 $base_color: #253858;
 $gray: #cccccc;
+$bg_color: #ffffff;
 
 .sxSelectMain {
   display: flex;
   justify-content: space-between;
-  width: 20%;
+  //width: 20%;
   margin: 0 auto;
   color: $base_color;
   position: relative;
@@ -31,7 +32,7 @@ $gray: #cccccc;
   border-radius: 3px;
   cursor: default;
   position: relative;
-  background-color: #fff;
+  background-color: $bg_color;
   padding: 0.35em;
   margin-bottom: 0.21em;
 
@@ -68,14 +69,19 @@ $gray: #cccccc;
   border-left: 0;
 }
 
+.sxSelectListsWrapper{
+  display: flex;
+}
 .sxDropdownList {
+  width: 100%;
+  min-width: 100%;
   padding: 0;
   list-style: none;
   text-align: left;
   border: solid 1px $gray;
   border-radius: 4px;
   position: relative;
-
+  background-color: $bg_color;
 }
 
 .sxListItem {
@@ -89,8 +95,10 @@ $gray: #cccccc;
   justify-content: space-between;
   align-items: center;
 
-  &:hover {
-    background-color: #f6f6f6;
+
+  &:not([class*=sxSelected]):hover {
+      background-color: #f6f6f6;
+
   }
 
   .sxListItemLabel {

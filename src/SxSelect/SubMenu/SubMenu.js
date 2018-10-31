@@ -3,18 +3,13 @@ import PropTypes from 'prop-types';
 import styles from './SubMenu.module.scss';
 
 
-const SubMenu = ({data, x, y, h, selectedItems, handleMouseLeave, handleClick}) => {
+const SubMenu = ({data, selectedItems, handleMouseLeave, handleClick}) => {
 
-    const stylesInline = {
-        top: y,
-        left: x,
-        height: h
-    };
-    return (<ul style={stylesInline} className={styles.sxSubDropdownList} onMouseLeave={handleMouseLeave}>
+    return (<ul className={styles.sxSubDropdownList} onMouseLeave={handleMouseLeave}>
         {
             data.items.map((i) => {
                 return (<li key={i.val}
-                            className={selectedItems.includes(i) ? styles.sxSubListItemSelected : styles.sxSubListItem}
+                            className={selectedItems.includes(i) ? 'sxSelected ' + styles.sxSubListItemSelected : styles.sxSubListItem}
                             onClick={() => handleClick(i, data.parent)}><span
                     className={styles.sxSubListItemLabel}>{i.label}</span></li>)
             })
@@ -25,9 +20,6 @@ const SubMenu = ({data, x, y, h, selectedItems, handleMouseLeave, handleClick}) 
 
 SubMenu.propTypes = {
     data: PropTypes.array,
-    x: PropTypes.number,
-    y: PropTypes.number,
-    h: PropTypes.number,
     selectedItems: PropTypes.array,
     handleMouseLeave: PropTypes.func,
     handleClick: PropTypes.func
