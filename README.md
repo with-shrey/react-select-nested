@@ -27,17 +27,17 @@ class App extends Component {
           {
               val: 1,
               label: 'Orange',
-              items: [{val: 7, label: 'sub item 1'}, {val: 8, label: 'sub item 2'}]
+              items: [{parentVal: 1, val: 7, label: 'sub item 1'}, {{parentVal: 1, val: 8, label: 'sub item 2'}]
           },
           {
               val: 2,
               label: 'Grape',
-              items: [{val: 5, label: 'sub item 3'}, {val: 6, label: 'sub item 4'}]
+              items: [{parentVal: 2, val: 5, label: 'sub item 3'}, {parentVal: 2, val: 6, label: 'sub item 4'}]
           },
           {
               val: 3,
               label: 'Pomegranate',
-              items: [{val: 9, label: 'sub item 5'}, {val: 10, label: 'sub item 6'}]
+              items: [{parentVal: 3, val: 9, label: 'sub item 5'}, {parentVal: 3, val: 10, label: 'sub item 6'}]
           },
           {
               val: 4,

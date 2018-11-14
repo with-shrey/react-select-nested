@@ -71,6 +71,9 @@ $bg_color: #ffffff;
 
 .sxSelectListsWrapper{
   display: flex;
+  position: absolute;
+  z-index: 10;
+  width: 100%;
 }
 .sxDropdownList {
   width: 100%;
