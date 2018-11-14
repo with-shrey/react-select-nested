@@ -1,10 +1,18 @@
 {
-  parser: "babel-eslint",
+  "parser": "babel-eslint",
   "plugins": [
     "react"
   ],
+  "env": {
+    "browser": true,
+    "node": true
+  },
   "rules": {
-    "react/no-find-dom-node": "off"
+    "globals": {
+      "module": true
+    },
+    "react/jsx-closing-tag-location": [1, "tag-aligned"],
+    "no-console": "off",
   },
   "settings": {
     "react": {
