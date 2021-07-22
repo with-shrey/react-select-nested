@@ -12,7 +12,6 @@
     "debug": "webpack --display-error-details",
     "storybook": "start-storybook -p 6006",
     "build-storybook": "build-storybook",
-    "postinstall": "npm run build"
   },
   "keywords": [
     "select",
