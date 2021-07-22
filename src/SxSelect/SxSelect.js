@@ -157,4 +157,6 @@ SxSelect.propTypes = {
   list: PropTypes.array
 };
 
-export default onClickOutside(SxSelect);
+const SxSelectWrapped = React.forwardRef((props, ref) => onClickOutside((p) => <SxSelect {...p} ref={ref} />)(props));
+
+export default SxSelectWrapped;
